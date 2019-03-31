@@ -1,0 +1,14 @@
+package com.java.programming.masterclass.software.developers;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		long miles = SpeedConverter.toMilesPerHour(10.5);
+		System.out.println("Mile = " + miles);
+
+		SpeedConverter.printConversion(10.5);
+
+	}
+
+}

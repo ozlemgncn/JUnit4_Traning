@@ -8,16 +8,16 @@ public class AssertTest {
 
 	@Test
 	public void testAssertions() {
-		
-		Dummy d1 = new Dummy(5);
+
+		Dummy d1 = null;
 		Dummy d2 = new Dummy(5);
-		
-		assertEquals(d1, d2);
-		
+
+		assertTrue(d1 == null);
+
 	}
-	
+
 	private static class Dummy {
-		
+
 		private int id;
 
 		public Dummy(int id) {
