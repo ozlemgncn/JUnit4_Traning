@@ -1,6 +1,6 @@
-package com.junit.course;
+package com.ozlemgncn.junittest;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -8,7 +8,7 @@ import java.util.Collection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
+import org.junit.runners.Parameterized.Parameter;
 
 
 @RunWith(Parameterized.class)
@@ -26,18 +26,12 @@ public class ParametreTest {
 			{10,7,70}});
 	}
 
-	private int eni;
-	private int boy;
-	private int toplamMetreKare;
-	
-
-
-	public ParametreTest(int eni, int boy, int toplamMetreKare) {
-		this.eni = eni;
-		this.boy = boy;
-		this.toplamMetreKare = toplamMetreKare;
-	}
-
+	@Parameter(0)
+	public int eni;
+	@Parameter(1)
+	public int boy;
+	@Parameter(2)
+	public int toplamMetreKare;
 
 
 	@Test
